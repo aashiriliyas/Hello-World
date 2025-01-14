@@ -21,9 +21,9 @@ jobs:
 
     - name: Transition Jira Issue to To Do
       env:
-        JIRA_USERNAME: ${{ Musafir's Time }}
-        JIRA_API_TOKEN: ${{ ATATT3xFfGF0z00NdqqUM11nJnVt_Lk2myXlguY6yyn_jMSkH_ZP0BhT1t7hxh7frnx1YZvozzf9OvhjVYCjZdMlTU-ie2Df5j2k8HyBKiHRjhbdHPdDhnkmkmX-nPxJN0Muencbb--zCKZOyVPYnT8sgjv3tOYxtT8QO07forRTk-9Bk1KFgwA=1A9C6FD2 }}
-        JIRA_BASE_URL: ${{ https://jattaashir.atlassian.net/jira/software/projects/HW/boards/4 }}
+        JIRA_USERNAME: "Musafir's Time"  # Replace with your actual username
+        JIRA_API_TOKEN: "ATATT3xFfGF0z00NdqqUM11nJnVt_Lk2myXlguY6yyn_jMSkH_ZP0BhT1t7hxh7frnx1YZvozzf9OvhjVYCjZdMlTU-ie2Df5j2k8HyBKiHRjhbdHPdDhnkmkmX-nPxJN0Muencbb--zCKZOyVPYnT8sgjv3tOYxtT8QO07forRTk-9Bk1KFgwA=1A9C6FD2"  # Replace with your actual token
+        JIRA_BASE_URL: "https://jattaashir.atlassian.net"
         ISSUE_KEY: "HELLO-123"  # Replace with your actual issue key
       run: |
         curl -D- -u $JIRA_USERNAME:$JIRA_API_TOKEN -X POST \
